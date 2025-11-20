@@ -1,0 +1,74 @@
+import PaymentsModel from "@/models/paymentsModel";
+import { NextResponse } from "next/server";
+import BeeModel from "@/models/beeModel";
+import NectarModel from "@/models/nectarModel";
+import BookingsModel from "@/models/bookingsModel";
+
+//route to get in route payments for a logged in user(bee/nectar)
+export async function GET(request, { params }) {
+  try {
+    //get params data, id
+    const data = await params;
+    const id = data.id;
+    //check id exists
+    if (id) {
+      //check if logged in user if a nectar or bee to find bookings associated with them
+      const beeUser = await BeeModel.findById(id);
+      const nectarUser = await NectarModel.findById(id);
+      if (beeUser) {
+        const bookings = await BookingsModel.find({
+          beeId: id,
+        });
+        if (!bookings) {
+          return NextResponse.json(
+            { message: "No Bookings found." },
+            { status: 400 }
+          );
+        } else {
+          var payments = await PaymentsModel.find({
+            bookingId: { $in: bookings },
+            isInRoute: true,
+          });
+        }
+        return NextResponse.json(
+          {
+            message: "Bee in route payments found.",
+            payments,
+          },
+          { status: 200 }
+        );
+      } else if (nectarUser) {
+        const bookings = await BookingsModel.find({
+          nectarId: id,
+        });
+        if (!bookings) {
+          return NextResponse.json(
+            { message: "No Bookings found." },
+            { status: 400 }
+          );
+        } else {
+          var payments = await PaymentsModel.find({
+            bookingId: { $in: bookings },
+            isInRoute: true,
+          });
+        }
+        return NextResponse.json(
+          {
+            message: "Nectar in route payments found.",
+            payments,
+          },
+          { status: 200 }
+        );
+      }
+    }
+    return NextResponse.json(
+      {
+        message: "User could not be found.",
+      },
+      { status: 400 }
+    );
+  } catch (err) {
+    //All other errors
+    return NextResponse.json({ message: "Server Error." }, { status: 500 });
+  }
+}
