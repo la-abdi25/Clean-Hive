@@ -31,7 +31,7 @@ export const GET = async (request) => {
         let id = nectars[nectar]._id;
         //get nectar user profile image from S3 Bucket/CloudFront
         const res = await axios.get(
-          `${request.nextUrl.origin}/api/users/nectar-profile/${id}`
+          `${process.env.NEXT_PUBLIC_API_URL}/api/users/nectar-profile/${id}`
         );
         data.availability = nectars[nectar].availability;
         data.profileImage = res.data.url;
