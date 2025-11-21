@@ -6,9 +6,7 @@ import "../styles/NavBarForms.css";
 const NavBarForms = () => {
   return (
     <header className="NavBarForms">
-      <Link href="/">
-        <img className="NavBarForms-Logo" src="/logo.png" />
-      </Link>
+      <img className="NavBarForms-Logo" src="/logo.png" />
     </header>
   );
 };
