@@ -7,7 +7,9 @@ const NavBarLogo = () => {
   return (
     <header className="NavBarBeeProfile">
       <div>
-        <img className="NavBarBeeProfile-Logo" src="/profile-logo.png" />
+        <Link href="/bee-profile">
+          <img className="NavBarBeeProfile-Logo" src="/profile-logo.png" />
+        </Link>
       </div>
     </header>
   );
