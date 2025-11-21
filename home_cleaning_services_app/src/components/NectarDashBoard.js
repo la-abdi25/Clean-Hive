@@ -29,7 +29,7 @@ const NectarDashBoard = () => {
     const handleNectarData = async () => {
       const res = await axios.get("/api/users/login");
       const res2 = await axios.get(
-        `api/users/nectar-profile/nectar-data/${res.data.userId}`
+        `/api/users/nectar-profile/nectar-data/${res.data.userId}`
       );
       setNectarData(res2.data.nectarData);
       setTopReviews(res2.data.myReviews);
