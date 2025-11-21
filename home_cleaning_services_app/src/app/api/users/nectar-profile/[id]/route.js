@@ -13,7 +13,7 @@ export async function GET(request, { params }) {
     if (id) {
       const nectar = await NectarModel.findById({ _id: id });
       if (nectar) {
-        const url = `${process.env.AWS_CLOUDFRONT_URL}/${nectar.profileImage}`;
+        const url = `https://${process.env.AWS_CLOUDFRONT_URL}/${nectar.profileImage}`
         return NextResponse.json(
           { message: "Nectar profile image found successfully", url },
           { status: 200 }
