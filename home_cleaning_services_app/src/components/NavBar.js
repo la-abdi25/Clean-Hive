@@ -20,9 +20,7 @@ const NavBar = () => {
   return (
     <header className="Nav-Header">
       <nav className="NavBar">
-        <Link href="/">
-          <img className="NavBar-Logo" src="/logo.png" />
-        </Link>
+        <img className="NavBar-Logo" src="/logo.png" />
         <div className="NavBar-Links">
           <div className="NavBar-Register">
             <div className="NavBar-MainLinks-Register">
