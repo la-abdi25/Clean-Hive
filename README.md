@@ -153,10 +153,10 @@
   </ul>
     <ul>
     <h4>Integrations</h4>
-    <li>Stripe API – Secure payment processing</li>
-    <li>Firebase API – Real-time chat and messaging</li>
-    <li>AWS S3 – Image and file storage</li>
-    <li>AWS CloudFront – CDN for fast global asset delivery</li>
+    <li>Stripe API: Secure payment processing</li>
+    <li>Firebase API: Real-time chat and messaging</li>
+    <li>AWS S3: Image and file storage</li>
+    <li>AWS CloudFront: CDN for fast global asset delivery</li>
   </ul>
 </ul>
   
