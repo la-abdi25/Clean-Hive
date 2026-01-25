@@ -135,6 +135,7 @@
     <h4>Backend:</h4>
     <li>Node.js / API Routes (Next.js)</li>
     <li>MongoDB</li>
+    <li>Sharp: image processing to resize Nectar profile images</li>
   </ul>
   <ul>
     <h4>Authentication:</h4>
