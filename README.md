@@ -1,7 +1,5 @@
 # Clean-Hive
 
-# Dog Adoption API
-
 <h2>Description</h2>
 <p> A full-stack home cleaning services application that allows users to book professional cleaning services, communicate with cleaners in real time, and securely pay online. Built with a modern web stack focused on scalability, security, and performance. </p>
 
