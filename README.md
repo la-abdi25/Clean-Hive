@@ -16,6 +16,7 @@
   <li>Secure login and authentication using JWT and bcrypt</li>
   <li>Personalized profile pages for Bees and Nectars</li>
   <li>Nectars are able to update profile information (phone number, bio, cleaning plan, and availability)</li>
+  <li>Nectars are required to update availability times weekly</li>
   <li>Bees are able to update profile information (phone number and address)</li>
 </ul>
 
