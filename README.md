@@ -1,7 +1,7 @@
 # Clean-Hive
 
 <h2>Description</h2>
-<p> A full-stack home cleaning services application that allows users to book professional cleaning services, communicate with cleaners in real time, and securely pay online. Built with a modern web stack focused on scalability, security, and performance. </p>
+<p> A full-stack home cleaning services application that allows users to book professional cleaning services, communicate with cleaners in real time, and securely pay online. Built with a modern web stack focused on scalability, security, and performance using Next.js/React, MongoDB, Stripe API, Firebase API, AWS S3(Object Storage), and AWS CloudFront(CDN) </p>
 
 <h2> App Terminology </h2>
 <ul>
@@ -21,7 +21,7 @@
 
 <h3>Browse Cleaning Agents</h3>
 <ul>
-  <li>View a list of available cleaning agents</li>
+  <li>View a list of available Nectars</li>
   <li>Select a Nectar directly from their profile</li>
   <li>Search for a Nectar by name</li>
 </ul>
@@ -53,8 +53,8 @@
 <h3>Booking Cancellations</h3>
 <ul>
   <li>Cancellations can be initiated by: Bees and Nectars</li>
-  <li>A 24-hour cancellation window is enforced: Bookings cannot be canceled within 24 hours of the scheduled service time using time-based validation</li>
-  <li>A Stripe refund is issued directly to the customer if the funds have not yet been paid out to the Nectar</li>
+  <li>A 24-hour cancellation window is enforced: Bookings cannot be cancelled within 24 hours of the scheduled service time using time-based validation</li>
+  <li>A Stripe refund is issued directly to the Bee if the funds have not yet been paid out to the Nectar</li>
   <li>A Stripe transfer reversal is performed if the funds have been paid out to the Nectar</li>
 </ul>
 
@@ -63,7 +63,7 @@
   <li>Pending – Booking created, awaiting confirmation from Nectar</li>
   <li>Upcoming – Payment confirmed and service scheduled</li>
   <li>Completed – Cleaning service successfully fulfilled</li>
-  <li>Cancelled – Booking cancelled by customer or cleaning agent</li>
+  <li>Cancelled – Booking cancelled by Bee or Nectar</li>
 </ul>
 
 <h3>Bee Payment View</h3>
@@ -72,7 +72,7 @@
   <li>Booking reference number</li>
   <li>Payment status (in route, or cancelled)</li>
   <li>Card details (masked): Card brand, Last 4 digits, Expiration date</li>
-  <li>Note: Sensitive card data such as full card numbers and CVC codes are never stored or exposed. All card information is securely handled and tokenized by Stripe.</li>
+  <li>Note: Sensitive card data such as full card numbers and CVC codes are never stored or exposed. All card information is securely handled and tokenized by Stripe</li>
 </ul>
 
 <h3>Nectar Payment View</h3>
@@ -97,7 +97,7 @@
 <ul>
   <li>Bees can leave reviews and delete reviews after completed services</li>
   <li>Top 4 reviews are displayed on Nectar profiles</li>
-  <li>Full reviews visible to Bees: All Bees reviews are fully visible to other Bees to enhance authenticity and trust. </li>
+  <li>Full reviews visible to Bees: All Bees reviews are fully visible to other Bees to enhance authenticity and trust </li>
 </ul>
 
 
