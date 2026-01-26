@@ -19,7 +19,7 @@
   <li>Bees are able to update profile information (phone number and address)</li>
 </ul>
 
-<h3>Browse Cleaning Agents</h3>
+<h3>Browse Nectars</h3>
 <ul>
   <li>View a list of available Nectars</li>
   <li>Select a Nectar directly from their profile</li>
