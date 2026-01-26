@@ -128,7 +128,6 @@
     <h4>Frontend:</h4>
     <li>Next.js: Data fetching from custom APIs using useEffect, state management with useState, and dynamic page routing with useRouter and useParams.</li>
     <li>React</li>
-    <li>React Testing Library</li>
     <li>CSS</li>
   </ul>
    <ul>
