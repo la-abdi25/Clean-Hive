@@ -1,4 +1,4 @@
-# Clean-Hive
+# CleanHive
 
 <h2>Description</h2>
 <p> A production-ready full-stack home cleaning services platform that enables customers
