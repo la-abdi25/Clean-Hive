@@ -219,4 +219,7 @@ and scalable platform that connects customers with trusted cleaning professional
   <li>npm run dev</li>
   <li>Visit http://localhost:3000</li>
 </ol>
+
+<h2>License</h2>
+<p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
   
