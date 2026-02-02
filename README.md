@@ -57,6 +57,9 @@ and scalable platform that connects customers with trusted cleaning professional
 <h3>Messaging Page for Bees and Nectars</h3>
 <img src="assets/messagingpage.png" alt="Messaging Page" width="400">
 
+<h3>Bee Settings Page</h3>
+<img src="assets/beesettingspage.png" alt="Bee Settings Page" width="400">
+
 
 <h2>Features</h2>
 <h3>Bee & Nectar Accounts</h3>
