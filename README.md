@@ -21,6 +21,9 @@ and scalable platform that connects customers with trusted cleaning professional
   <li>Cleaning Agents(Nectars)</li>
 </ul>
 
+<h2>Live Demo</h2>
+<p>Check out the deployed app: <a href="https://clean-hive.onrender.com/" target="_blank">CleanHive</a></p>
+
 <h2> App Preview </h2>
 
 <h3>Home Page</h3>
