@@ -23,6 +23,9 @@ and scalable platform that connects customers with trusted cleaning professional
 
 <h2> App Preview </h2>
 
+<h3>Home Page</h3>
+<img src="assets/homepage1.png" alt="Home Page1" width="400">
+
 <h3>Login Page</h3>
 <img src="assets/login.png" alt="Login Page" width="400">
 
