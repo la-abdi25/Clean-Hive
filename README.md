@@ -39,6 +39,8 @@ and scalable platform that connects customers with trusted cleaning professional
 
 <h3>Nectar Profile Page</h3>
 <img src="assets/nectarprofilepage.png" alt="Nectar Profile Page" width="400">
+
+<h3>Nectar Profile Page Responsive</h3>
 <img src="assets/nectarprofileresponsive.png" alt="Nectar Profile Page Repsonsive" width="400">
 
 <h3>Bees' Review Page</h3>
