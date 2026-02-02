@@ -21,6 +21,9 @@ and scalable platform that connects customers with trusted cleaning professional
   <li>Cleaning Agents(Nectars)</li>
 </ul>
 
+<h2> App Preview </h2>
+![Login Page](assets/login.png)
+
 <h2>Features</h2>
 <h3>Bee & Nectar Accounts</h3>
 <ul>
